@@ -23,3 +23,8 @@ Script: [partitions_events_producer.py](partitions_events_producer.py)
 ### Stream Events Producer
 Use this script to produce some sample data that triggers the updates in INFORMATION_SCHEMA
 Script: [stream_events_producer.py](stream_events_producer.py)
+
+
+## Additional Considerations
+- Use hash comparison in the checkpointing process to track changes at table level hence reduce duplicates
+- Use better storage types to track checkpoints, such as [Cloud Datastore](https://cloud.google.com/datastore)
