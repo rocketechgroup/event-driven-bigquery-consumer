@@ -28,3 +28,4 @@ Script: [stream_events_producer.py](stream_events_producer.py)
 ## Additional Considerations
 - Use hash comparison in the checkpointing process to track changes at table level hence reduce duplicates
 - Use better storage types to track checkpoints, such as [Cloud Datastore](https://cloud.google.com/datastore)
+- Send events to [Cloud PubSub](https://cloud.google.com/pubsub) so that downstream consumers can be added
